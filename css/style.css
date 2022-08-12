@@ -1,0 +1,351 @@
+:root{
+
+
+/*------------Primary----------------*/
+
+--SoftBlue: hsl(215, 51%, 70%);
+--Cyan : hsl(178, 100%, 50%);
+
+
+
+/*-----------Neutral-----------------*/
+
+--VDarkBlue_mainBG: hsl(217, 54%, 11%);
+--VDarkBlue_cardBG: hsl(216, 50%, 16%);
+--VDarkBlue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+
+/*-----------Fonts------------------*/
+
+--primaryFont: 'Outfit', sans-serif;
+
+
+
+}
+
+
+html {
+
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+
+}
+
+*,
+*:before,
+*:after {
+
+    box-sizing: inherit;
+}
+
+
+header{
+
+    margin: 0 auto;
+}
+
+
+body{
+
+    background-color: var(--VDarkBlue_mainBG);
+
+    font-size: 1.8rem;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    margin: 0;
+
+
+
+}
+
+
+h1{
+
+    font-size: 2.2rem;
+    font-family: var(--primaryFont);
+    color: var(--White);
+
+}
+
+
+p{
+
+    font-family: var(--primaryFont);
+
+    color: var(--SoftBlue) ;
+
+
+}
+
+
+span{
+
+    font-family: var(--primaryFont);
+
+    color: var(--White);
+
+}
+
+
+hr{
+    width: 30rem ;
+
+    color: var(--VDarkBlue_line);
+}
+
+
+a{
+
+    text-decoration: none;
+
+    color: var(--White);
+
+    
+}
+
+
+a:hover{
+
+    color: var(--Cyan);
+}
+
+
+
+footer{
+
+   
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    min-height: 1rem;
+
+    margin-top: 4rem;
+
+    margin-bottom: 5rem;
+
+    font-family: var(--primaryFont);
+
+    color: var(--White);
+
+    justify-content: center;
+
+
+
+
+} 
+
+
+footer span{
+
+    text-decoration: none;
+
+    color: rgb(157, 192, 238) ;
+
+}
+
+
+footer span:hover{
+
+    color: var(--Cyan);
+
+}
+
+
+
+
+.card-container{
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: nowrap;
+
+    margin: 10rem auto;
+
+    background-color: var(--VDarkBlue_cardBG);
+ 
+    border-radius: 1.2rem;
+
+    width: 330px;
+
+    padding: 1rem;
+
+    height: max-content;
+
+    
+}
+
+
+.image-container{
+    
+    border-radius: 1rem;
+
+    background-image: url(../images/image-equilibrium.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    margin-top: 1rem;
+    
+    height: 300px;
+
+    width: 300px;
+    
+
+
+}
+
+
+.overlay{
+
+    position: absolute;
+
+    height: 300px;
+
+    width: 300px;
+
+    border-radius: 1rem;
+
+    opacity: 0;
+
+    transition: .5s ease;
+
+    background-color: var(--Cyan);
+
+    cursor: pointer;
+
+
+
+}
+
+.eye-image{
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+
+}
+
+.image-container:hover .overlay{
+
+    opacity: 0.75;
+}
+
+
+
+
+.text-container{
+    margin:2rem; 
+}
+
+
+
+.PriceTime-flex{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+}
+
+
+
+
+.price{
+    display: flex;
+
+    align-items: center;
+}
+
+.Tprice{
+
+    font-family: var(--primaryFont);
+    color: var(--Cyan);
+
+    margin: 1rem;
+
+}
+
+
+.time{
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.Ttime{
+
+    font-family: var(--primaryFont);
+
+    color: var(--SoftBlue) ;
+
+
+    margin: 1rem;
+}
+
+
+
+
+
+.creator{
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+   
+}
+
+
+.img-creator{
+
+    display: block;
+
+    margin: auto;
+
+    width: 30px;
+
+    height: 30px;
+
+    margin-right: 1rem;
+
+    border-radius: 30px;
+
+    border: 1px solid var(--White) ;
+
+    
+
+}
+
+
